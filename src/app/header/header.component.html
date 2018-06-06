@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+
+  <ng-content select=".title"></ng-content>
+  <ng-content></ng-content>
+
+  <mat-form-field >
+    <input matInput placeholder="Search term"
+           #inputEl
+           (input)="search(inputEl.value)">
+  </mat-form-field>
+
+</mat-toolbar>
